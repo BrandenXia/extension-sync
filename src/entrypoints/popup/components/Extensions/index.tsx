@@ -6,7 +6,7 @@ import {
   syncAtom,
   syncServiceAtom,
 } from "@/store/extensions.ts";
-import { useSetAtom, useAtomValue } from "jotai/react";
+import { useSetAtom, useAtomValue } from "jotai";
 import Droppable from "./Droppable.tsx";
 import Draggable from "./Draggable.tsx";
 import { useCallback, useMemo } from "react";

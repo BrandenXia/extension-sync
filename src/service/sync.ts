@@ -1,5 +1,5 @@
 import { getDefaultStore } from "jotai";
-import optionsAtom from "@/store/options.ts";
+import { optionsAtom } from "@/store/options.ts";
 
 interface Sync {
   upload(extension: string[]): Promise<void>;

@@ -1,6 +1,6 @@
 import { browser, Management } from "wxt/browser";
 import { atom } from "jotai";
-import optionsAtom from "./options.ts";
+import { optionsAtom } from "./options.ts";
 import { atomWithStorage } from "jotai/utils";
 import {getSyncService} from "@/service/sync.ts";
 
@@ -35,8 +35,6 @@ const removeSyncedAtom = atom(null, (get, set, id) => {
 });
 
 const syncServiceAtom = atom(null, async (get, set) => {
-  console.log("syncServiceAtom");
-
   const syncService = await getSyncService();
 
   const local = get(syncAtom);
